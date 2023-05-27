@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({ baseURL: "vite-back-ajithkumar9242.vercel.app" });
+const API = axios.create({ baseURL: "https://vite-back.onrender.com" });
 
 export const getTimelinePost = (id) => API.get(`/post/${id}/timeline`)
 

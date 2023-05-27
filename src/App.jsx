@@ -20,21 +20,18 @@ const user = useSelector((state) => state.authReducer.authData);
       <Routes>
         <Route
           path="/"
-          element={user ? <Navigate to="home" /> : <Login />}
+          element={user ? <Home /> : <Login />}
         />
         <Route
           path="/home"
           element={user ? <Home /> :  <Login />}
         />
-        {/* <Route
-          path="/auth"
-          element={user ? <Navigate to="../home" /> :  <SignUp />}
-        /> */}
+
 
 
         <Route
           path="/signup"
-          element={user ? <Navigate to="../home" /> :  <SignUp />}
+          element={ <SignUp />}
         />
 
           <Route
