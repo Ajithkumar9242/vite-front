@@ -1,6 +1,6 @@
 import { useState , React } from 'react'
 import axios from "axios"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useToast } from '@chakra-ui/react'
 import {
   Flex,
@@ -16,7 +16,7 @@ import {
   Heading,
   Text,
   useColorModeValue,
-  Link,
+  
 } from '@chakra-ui/react';
 
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
@@ -184,7 +184,7 @@ const SignUp = () => {
             </Stack>
             <Stack pt={6}>
               <Text align={'center'}>
-                Already a user? <Link color={'blue.400'} href='/login'>Login</Link>
+                Already a user? <Link style={{ color: 'blue'}} to='/login'>Login</Link>
               </Text>
             </Stack>
           </Stack>

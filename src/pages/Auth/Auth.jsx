@@ -7,16 +7,16 @@ import {
   FormControl,
   FormLabel,
   Input,
-  Checkbox,
+ 
   Stack,
-  Link,
+  
   Button,
   Heading,
   Text,
   useColorModeValue,
 } from '@chakra-ui/react';
 import axios from "axios"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useToast } from '@chakra-ui/react'
 import { login } from '../../actions/AuthAction';
 import { useDispatch } from 'react-redux';
@@ -125,7 +125,7 @@ const submitHandler = async () =>{
             </Stack>
             <Stack spacing={10}>
               <Text align={'center'}>
-                Dont have an account? <Link color={'blue.400'} href='/signup'> Sign Up</Link>
+                Dont have an account? <Link style={{ color: 'blue'}}  to="/signup"> Sign Up</Link>
               </Text>
             </Stack>
           </Stack>
